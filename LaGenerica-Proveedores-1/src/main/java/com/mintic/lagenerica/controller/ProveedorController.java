@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mintic.lagenerica.model.Proveedor;
 import com.mintic.lagenerica.repository.ProveedorRepository;
 
-@CrossOrigin(origins = "http://localhost:9091") // Seguridad
+@CrossOrigin({"http://localhost:9091", "http://localhost:3000"}) // Seguridad
 @RestController
 @RequestMapping("/proveedor")
 public class ProveedorController {
